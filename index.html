@@ -22,14 +22,17 @@
     </div>
     <div class="container">
       <div class="input-container">
-        <label class="" for="comment-textarea">
-          Escribe tu mensaje:
-          <textarea class="textarea" name="comment" id="comment-textarea"  rows="8"></textarea>
-        </label>
+        <form id="coment-form">
+          <label class="" for="comment-textarea">
+            Escribe tu mensaje:
+            <textarea class="textarea" name="comment" id="comment-textarea"  rows="8"></textarea>
+            <button>Enviar</button>
+          </label>
+        </form>
       </div>
     </div>
     <div class="container">
-      <div class="comments-container">
+      <div class="comments-container" id="comments-main-container">
         <div class="comment">
           <img src="https://via.placeholder.com/50" alt="">
           <div class="comment__content">
@@ -37,11 +40,14 @@
             <div class="comment__text">Este es el primer comentario</div>
             <div class="comment__footer">
               <div class="comment__date">18/07/2020</div>
-              <i class="fas fa-heart"></i>
+              <button id="comment-like-button">
+                <i class="far fa-heart"></i>
+              </button>
             </div>
           </div>
         </div>
       </div>
     </div>
+    <script src="scripts/scripts.js"></script>
   </body>
 </html>

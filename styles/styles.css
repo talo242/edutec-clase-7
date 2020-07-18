@@ -73,3 +73,7 @@ h1 {
   width: 100%;
   max-width: 500px
 }
+
+.comment__like {
+  color: red;
+}
