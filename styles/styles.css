@@ -1,0 +1,63 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Nunito Sans', Arial, Helvetica, sans-serif;
+  margin: 0;
+  background: url('grid.svg');
+  background-size: 16px;
+  color: #362a2a;
+  position: relative;
+  height: 100vh;
+}
+
+a {
+  color: #362a2a;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.container:hover .grid {
+  opacity: 0.25;
+}
+
+h1 {
+  font-size: 32px;
+  border: 1px solid transparent;
+  position: relative;
+  width: 100%;
+  max-width: 782px;
+  font-family: 'Quando', serif;
+}
+
+.comments-container {
+  width: 100%;
+  max-width: 300px;
+  display: flex;
+  flex-flow: column;
+}
+
+.comment {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.comment__content {
+  padding-left: 16px;
+  width: 100%;
+}
+
+.comment__footer {
+  display: flex;
+  margin-top: 8px;
+  font-size: 14px;
+  justify-content: space-between;
+}
